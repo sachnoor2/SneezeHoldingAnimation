@@ -50,7 +50,7 @@ jobs:
 
       - name: Render Full Video
         run: |
-          npx remotion render out/bundle.js SneezeHolding out/SneezeHolding_FINAL.mp4 --codec=h264 --crf=18
+          npx remotion render SneezeHolding out/SneezeHolding_FINAL.mp4 --bundle=out/bundle.js --codec=h264 --crf=18
         env:
           REMOTION_ALLOW_EVAL: true
 
